@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.nenosystems.dto">
+
+	<class name="ModuleDTO" table="module">
+
+		<id name="id" column="ID">
+			<generator class="increment" />
+		</id>
+		<property name="moduleId" column="MODULE_ID" />
+		<property name="moduleName" column="MODULE_NAME" />
+		<property name="description" column="DESCRIPTION" />
+		<property name="moduleLead" column="MODULE_LEAD" />
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+#
+#Thu Mar 27 09:36:17 IST 2008
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=
+version=3.0
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=false
+keyGenerator=increment
+libInstallFolder=
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=TempDTO
+reSettingsFile=/samplehibernate/hibernate.reveng.xml
+configFile=/samplehibernate/src/hibernate.cfg.xml
+createConfigFile=false
+addLibs2Classpath=false

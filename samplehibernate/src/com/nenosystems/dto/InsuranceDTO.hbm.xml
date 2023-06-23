@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.nenosystems.dto">
+
+	<class name="InsuranceDTO" table="insurance">
+		<id name="id" column="ID" />  
+		<property name="name" type="string" column="Insurance_name"/>
+		<property name="amount" type="double" column="invested_amount"/> 
+		<property name="date" type="timestamp" column="investement_date"/> 
+	</class>
+	
+        
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.nenosystems.dto">
+
+	<class name="ApplicationDTO" table="applications">
+
+		<id name="id" column="ID">
+			<generator class="increment" />
+		</id>
+
+		<property name="name" column="NAME" />
+		<property name="description" column="DESCRIPTION" />
+		<property name="startDate" column="START_DATE" type="date" />
+		<property name="completeDate" column="COMPLETE_DATE" type="date"  />
+		
+
+	</class>
+
+</hibernate-mapping>
