@@ -7,11 +7,11 @@
 <hibernate-configuration>
 
 <session-factory>
-	<property name="connection.username">root</property>
-	<property name="connection.url">jdbc:mysql://127.0.0.1/hibernate</property>
+	
+	<property name="connection.url">jdbc:mysql://localhost/hibernate</property>
 
 	<property name="connection.driver_class">
-		com.mysql.jdbc.Driver
+		com.mysql.cj.jdbc.Driver
 	</property>
 
 	<!-- SQL dialect -->
@@ -21,22 +21,23 @@
 	<property name="show_sql">true</property>
 
 	<!-- Drop and re-create the database schema on startup -->
-	<property name="hbm2ddl.auto">create</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="connection.username">root</property>
 	<property name="connection.password">root</property>
 
-	<mapping resource="com/nenosystems/dto/ApplicationDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/BugDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/ContactDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/CustomDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/ModuleDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/AddressDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/EmployeeDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/AuctionItemDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/BidDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/StatusDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/MarksheetDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/inh/PaymentDTO.hbm.xml" />
-	<mapping resource="com/nenosystems/dto/UserDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/ApplicationDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/BugDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/ContactDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/CustomDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/ModuleDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/AddressDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/EmployeeDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/AuctionItemDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/BidDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/StatusDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/MarksheetDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/inh/PaymentDTO.hbm.xml" />
+	<mapping resource="com/webdev/dto/UserDTO.hbm.xml" />
 
 
 </session-factory>

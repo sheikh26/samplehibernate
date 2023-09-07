@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.webdev.dto">
+
+	<class name="AuctionItemDTO" table="AuctionItem">
+		<id name="id" column="ID"></id>
+		<property name="description"  />
+		
+		<set  name="bids" cascade="all"  fetch="join" >
+			<key column="ITEM_ID" />
+			<one-to-many class="BidDTO" />
+		</set>
+
+	</class>
+
+</hibernate-mapping>
